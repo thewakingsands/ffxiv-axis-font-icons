@@ -1,0 +1,13 @@
+{
+  "name": "ffxiv-axis-font",
+  "version": "0.0.0",
+  "main": "index.css",
+  "license": "MIT",
+  "devDependencies": {
+    "stylus": "^0.54.7"
+  },
+  "scripts": {
+    "build": "stylus index.styl",
+    "preversion": "yarn build"
+  }
+}

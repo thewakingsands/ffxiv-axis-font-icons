@@ -1,0 +1,12 @@
+icons = json('./characters.json', { hash: true })
+
+i.xiv
+  &::before
+    font-family 'FFXIV'
+    font-style normal
+
+for char, cls in icons
+  i.xiv.{cls[0]}::before
+    content '\' + char
+  i.xiv.{char}::before
+    content '\' + char
