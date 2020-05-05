@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "main": "index.css",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "devDependencies": {
     "stylus": "^0.54.7"
   },
