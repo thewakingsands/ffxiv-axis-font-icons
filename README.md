@@ -25,7 +25,14 @@ https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.ttf
 }
 ```
 
-注意修改其中的 url 为上文下载的字体文件。然后引入本仓库中提供的 index.css。
+注意修改其中的 url 为上文下载的字体文件。
+
+然后你需要引入本仓库中提供的 index.css，此操作方法多种多样，请根据自己情况选择。
+例如在有 `style-loader` 的 webpack 项目中：
+
+```js
+import '@thewakingsands/axis-font-icons'
+```
 
 在 HTML 中可直接使用 `<i>` 标签显示字体：
 
@@ -38,3 +45,7 @@ https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.ttf
 ```html
 <i class="xiv e03c"></i>
 ```
+
+## 字符集
+
+字符集可以在 [这里](https://www.unpkg.com/@thewakingsands/axis-font-icons@latest/icons.html) 查看，或者在本地打开 icons.html，修改其中的字体文件路径。
