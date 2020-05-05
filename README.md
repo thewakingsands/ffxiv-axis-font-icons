@@ -1,9 +1,14 @@
 # Icons in FFXIV Axis font
 
-本仓库提供 ff14 使用的 fonticon 的定义和 webfont css 文件。请注意，由于 webfont 文件版权属于 SE，
-此处不会分发字体，你需要自行下载字体使用，并确保遵循 SE 的版权规定。
+[English Version](./README_en.md)
+
+本仓库提供 ff14 使用的 fonticon 的定义和 webfont css 文件。这里提供的图标定义均仔细考证游戏中的用处，并精心挑选其命名。
+
+对部分图标我们仍未知道其具体用途。如果你知道，可以在 issue 中告诉我们。
 
 ## 字体下载地址
+
+请注意，由于 webfont 文件版权属于 SE，本项目并不分发字体，你需要自行下载字体使用，并确保遵循 SE 的版权规定。
 
 ```
 https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.woff
