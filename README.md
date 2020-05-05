@@ -1,4 +1,4 @@
-# FFXIV AXIS Font
+# Icons in FFXIV Axis font
 
 本仓库提供 ff14 使用的 fonticon 的定义和 webfont css 文件。请注意，由于 webfont 文件版权属于 SE，
 此处不会分发字体，你需要自行下载字体使用，并确保遵循 SE 的版权规定。
