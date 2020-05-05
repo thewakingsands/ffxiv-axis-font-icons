@@ -28,13 +28,15 @@ https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.ttf
 注意修改其中的 url 为上文下载的字体文件。
 
 然后你需要引入本仓库中提供的 index.css，此操作方法多种多样，请根据自己情况选择。
-例如在有 `style-loader` 的 webpack 项目中：
+例如在有 `style-loader` 的 webpack 项目中，可以通过在入口点 import 本项目：
 
 ```js
 import '@thewakingsands/axis-font-icons'
 ```
 
-在 HTML 中可直接使用 `<i>` 标签显示字体：
+或者直接复制最新的[CSS 代码](https://www.unpkg.com/@thewakingsands/axis-font-icons@latest/index.css)也可以。
+
+引入完成后，在 HTML 中可直接使用 `<i>` 标签显示字体：
 
 ```html
 <i class="xiv hq"></i>
