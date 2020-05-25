@@ -2,7 +2,7 @@
 
 [中文版](./README.md)
 
-We provide special characters which used by FFXIV game, and definitions for them.
+We provide special symbols/characters which used by FFXIV game in the form of icon font, and definitions for them.
 These icons are located in game and named carefully by us.
 
 For icons which don't have name defined, we are unable to located them in game,
