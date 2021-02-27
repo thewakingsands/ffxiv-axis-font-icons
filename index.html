@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icons in FFXIV Axis font</title>
+  <style>
+@font-face {
+  font-family: 'FFXIV';
+  src: url('fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
+       url('fonts/FFXIV_Lodestone_SSF.woff') format('woff');
+  unicode-range: U+E020-E0DB;
+}
+.ffxiv {
+  font-family: FFXIV;
+}
+body {
+  margin: 0 2em 2em;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid #d6d3cd;
+  padding: 4px 8px;
+  line-height: 1.5;
+}
+tr:hover {
+  background: #f1f1f1;
+}
+td:first-child{
+  text-align:center
+}
+  </style>
+</head>
+<body>
+  <h1>Icons in FFXIV Axis font</h1>
+  <p>
+    <a class="github-button" href="https://github.com/thewakingsands/ffxiv-axis-font-icons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star thewakingsands/ffxiv-axis-font-icons on GitHub">Star</a>
+  </p>
+  <div id="loading">加载中……</div>
+  <table>
+    <thead>
+      <tr>
+        <th>字符</th>
+        <th>码点</th>
+        <th>HTML</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <script>
+    if (!window.fetch) {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/fetch.js" integrity="sha256-E6Qjbpri3VCWu8GKOk5xCaZIJnvKhIni4/mQMm2kCE8=" crossorigin="anonymous"></' + 'script>');
+    }
+    if (!window.Promise) {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/es6-promise@4.2.8/dist/es6-promise.auto.min.js" integrity="sha256-Xxrdry6fWSKu1j2ALyuK/gHFQ+2Bp76ZrR6f3QXI47Y=" crossorigin="anonymous"></' + 'script>');
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/crel@4.2.1/crel.min.js" integrity="sha256-1QJN4sehgRSpatqbGj5FUMKGW035GCEYG4U9QksrKlM=" crossorigin="anonymous"></script>
+  <script>
+document.body.addEventListener('mouseenter', function (e) {
+  if (e.target.tagName !== 'CODE') return
+  var range = document.createRange()
+  range.selectNodeContents(e.target)
+  var selection = window.getSelection()
+  selection.removeAllRanges()
+  selection.addRange(range)
+}, true)
+
+fetch('characters.json')
+.then(function (resp) {
+  return resp.json()
+})
+.then(function (json) {
+  var tbody = document.querySelector('tbody')
+  for (var codepoint in json) {
+    var name = json[codepoint][0]
+    var desc = json[codepoint][1]
+
+    var row = crel('tr', [
+      crel('td', { class: 'ffxiv' }, String.fromCodePoint(parseInt(codepoint, 16))),
+      crel('td', codepoint),
+      crel('td', crel('code', '<i class="xiv ' + name + '"></i>')),
+      crel('td', desc)
+    ])
+
+    tbody.appendChild(row)
+  }
+
+  document.querySelector('#loading').style.display = 'none';
+})
+  </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
