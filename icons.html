@@ -7,8 +7,8 @@
   <style>
 @font-face {
   font-family: 'FFXIV';
-  src: url('https://cors-anywhere.herokuapp.com/https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
-       url('https://cors-anywhere.herokuapp.com/https://img.finalfantasyxiv.com/lds/pc/global/fonts/FFXIV_Lodestone_SSF.woff') format('woff');
+  src: url('fonts/FFXIV_Lodestone_SSF.ttf') format('truetype'),
+       url('fonts/FFXIV_Lodestone_SSF.woff') format('woff');
   unicode-range: U+E020-E0DB;
 }
 .ffxiv {
@@ -20,15 +20,24 @@ body {
 table {
   border-collapse: collapse;
 }
-td {
+td, th {
   border: 1px solid #d6d3cd;
-  padding: 0 8px;
+  padding: 4px 8px;
+  line-height: 1.5;
 }
-td:first-child{ text-align:center}
+tr:hover {
+  background: #f1f1f1;
+}
+td:first-child{
+  text-align:center
+}
   </style>
 </head>
 <body>
   <h1>Icons in FFXIV Axis font</h1>
+  <p>
+    <a class="github-button" href="https://github.com/thewakingsands/ffxiv-axis-font-icons" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star thewakingsands/ffxiv-axis-font-icons on GitHub">Star</a>
+  </p>
   <div id="loading">加载中……</div>
   <table>
     <thead>
@@ -83,5 +92,6 @@ fetch('characters.json')
   document.querySelector('#loading').style.display = 'none';
 })
   </script>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </body>
 </html>
