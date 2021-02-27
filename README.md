@@ -2,7 +2,7 @@
 
 [English Version](./README_en.md)
 
-本仓库提供 ff14 使用的 fonticon 的定义和 webfont css 文件。这里提供的图标定义均仔细考证游戏中的用处，并精心挑选其命名。
+本仓库提供《最终幻想 14》游戏内使用的 fonticon 的定义和 webfont css 文件。这里提供的图标定义均仔细考证游戏中的用处，并精心挑选其命名。
 
 对部分图标我们仍未知道其具体用途。如果你知道，可以在 issue 中告诉我们。
 
@@ -55,4 +55,4 @@ import '@thewakingsands/axis-font-icons'
 
 ## 字符集
 
-字符集可以在 [这里](https://www.unpkg.com/@thewakingsands/axis-font-icons@latest/icons.html) 查看，或者在本地打开 icons.html，修改其中的字体文件路径。
+字符集可以在 [这里](https://thewakingsands.github.io/ffxiv-axis-font-icons/) 查看，或者运行 `make.sh` 后打开本地的 icons.html。

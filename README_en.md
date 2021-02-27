@@ -58,6 +58,6 @@ or:
 
 ## Icons
 
-Preview icon set [here](https://www.unpkg.com/@thewakingsands/axis-font-icons@latest/icons.html).
+Preview icon set [here](https://thewakingsands.github.io/ffxiv-axis-font-icons/).
 
 We provide notes in Chinese and not English now, sorry for the inconvenient.
